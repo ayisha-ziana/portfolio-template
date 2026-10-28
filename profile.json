@@ -1,19 +1,19 @@
 {
-    "name": "Your Name",
-    "tagline": "Your one-line introduction",
-    "bio": "Write 2 or 3 sentences about yourself.",
+    "name": "Ayisha Ziana Subair",
+    "tagline": "CSE student at TKMCE - Learning and Exploring",
+    "bio": "I'm a first year CSE student interested in programming and building useful tech. I'm a curious learner and always look to developing my skills in the CS field",
     "skills": [
-        "Git",
-        "HTML"
+        "Python",
+        "MySQL"
     ],
     "projects": [
         {
-            "title": "My first project",
-            "desc": "What it does.",
-            "link": "https://github.com/yourname"
+            "title": "PicknPrep",
+            "desc": "A Python-based food ordering system developed as a Grade 12 project, with menu selection, custom recipes, and bill generation",
+            "link": "https://github.com/ayisha-ziana/PicknPrep"
         }
     ],
     "links": {
-        "github": "https://github.com/yourname"
+        "github": "https://github.com/ayisha-ziana"
     }
 }
