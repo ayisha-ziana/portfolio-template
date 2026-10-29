@@ -1,25 +1,35 @@
 :root {
-    --bg: #f5faf9;
-    --fg: #183b3a;
-    --muted: #587371;
-    --card: #e5f2ef;
-    --accent: #167d78;
+    --bg: #f7f0e5;
+    --fg: #360846;
+    --muted: #765f70;
+    --card: #fffaf2;
+    --accent: #7a184b;
+    --terracotta: #b9512c;
+    --amber: #db8741;
+    --gold: #f4e05b;
+    --border: #e5d3c2;
 }
-
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #101c1c;
-        --fg: #e5f2ef;
-        --muted: #a4bfbb;
-        --card: #1b2b2a;
-        --accent: #65c9b9;
+        --bg: #211329;
+        --fg: #f7f0e5;
+        --muted: #cbb8c9;
+        --card: #302039;
+        --accent: #e3a0bc;
+        --terracotta: #e58b68;
+        --amber: #db8741;
+        --gold: #f4e05b;
+        --border: #50364f;
     }
-
 }
 
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -27,76 +37,188 @@ body {
     font-family: system-ui, sans-serif;
     background: var(--bg);
     color: var(--fg);
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
+/* Introduction and sunset decoration */
 .hero {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
     text-align: center;
-    padding: 64px 20px 32px;
+    padding: 72px 20px 44px;
+    border-bottom: 1px solid var(--border);
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    top: -135px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(
+        180deg,
+        var(--gold),
+        var(--amber) 55%,
+        var(--terracotta)
+    );
+    opacity: 0.18;
 }
 
 .hero h1 {
     font-size: clamp(2rem, 6vw, 3.4rem);
-    margin: 0;
-    color: var(--accent);
+    line-height: 1.2;
+    margin: 0 0 12px;
+    color: var(--fg);
+    letter-spacing: -1px;
+}
+
+.hero p {
+    color: var(--muted);
+    margin: 0 0 20px;
+}
+
+.hero::after {
+    content: "";
+    display: block;
+    width: 72px;
+    height: 3px;
+    margin: 28px auto 0;
+    border-radius: 99px;
+    background: var(--terracotta);
+}
+
+/* Navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 nav a {
-    margin: 0 8px;
     color: var(--accent);
     text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    transition: background 0.2s ease;
 }
 
+nav a:hover {
+    background: var(--card);
+    text-decoration: underline;
+}
+
+/* Main content */
 main {
     max-width: 860px;
     margin: auto;
-    padding: 0 20px;
+    padding: 20px;
+}
+
+section {
+    margin: 36px 0;
 }
 
 h2 {
-    border-left: 4px solid var(--accent);
-    padding-left: 10px;
+    border-left: 4px solid var(--terracotta);
+    padding-left: 12px;
+    margin-bottom: 18px;
+    font-size: 1.5rem;
 }
 
+/* Skill tags */
 .chips {
     list-style: none;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 10px;
 }
 
 .chips li {
     background: var(--card);
-    padding: 4px 14px;
-    border-radius: 99px;
+    border: 1px solid var(--border);
+    color: var(--fg);
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: 0.95rem;
 }
 
+/* Project cards */
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(min(100%, 240px), 1fr)
+    );
+    gap: 18px;
 }
 
 .card {
     background: var(--card);
-    padding: 20px;
-    border: 1px solid #c8e1dc;
-    border-radius: 16px;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 14px;
     transition: transform 0.2s ease, border-color 0.2s ease;
 }
 
 .card:hover {
     transform: translateY(-3px);
-    border-color: var(--accent);
+    border-color: var(--terracotta);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: var(--fg);
+}
+
+.card p {
+    color: var(--muted);
+}
+
+/* Project links */
+a {
+    transition: color 0.2s ease;
 }
 
 .card a {
     color: var(--accent);
+    font-weight: 600;
+    text-underline-offset: 4px;
 }
 
+.card a:hover {
+    color: var(--terracotta);
+}
+
+a:focus-visible {
+    outline: 2px solid var(--terracotta);
+    outline-offset: 4px;
+}
+
+/* Footer */
 footer {
     text-align: center;
     color: var(--muted);
-    padding: 40px 20px;
+    padding: 28px 20px;
+    border-top: 1px solid var(--border);
+    font-size: 0.9rem;
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+    }
 }
