@@ -1,18 +1,21 @@
 :root {
-    --bg: #fff;
-    --fg: #1a1a2e;
-    --muted: #5b6475;
-    --card: #f3f4f8;
-    --accent: #e8590c;
+    --bg: #f5faf9;
+    --fg: #183b3a;
+    --muted: #587371;
+    --card: #e5f2ef;
+    --accent: #167d78;
 }
+
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: #10111a;
-        --fg: #f2f2f7;
-        --muted: #a0a6b8;
-        --card: #1b1d2b;
+        --bg: #101c1c;
+        --fg: #e5f2ef;
+        --muted: #a4bfbb;
+        --card: #1b2b2a;
+        --accent: #65c9b9;
     }
+
 }
 
 * {
@@ -77,8 +80,15 @@ h2 {
 
 .card {
     background: var(--card);
-    padding: 16px;
-    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid #c8e1dc;
+    border-radius: 16px;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    border-color: var(--accent);
 }
 
 .card a {
