@@ -1,35 +1,39 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio</title>
+  <meta name="theme-color" content="#360846">
+  <meta name="description" content="A personal portfolio showcasing my skills, projects, and journey as a CSE student.">
+  <title>My Portfolio | CSE Student</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header class="hero">
     <h1 id="name"></h1>
     <p id="tagline"></p>
-    <nav id="links"></nav>
+    <nav id="links" aria-label="Social links"></nav>
   </header>
-  <main>
-    <section>
-      <h2>About</h2>
+<main>
+    <section id="about">
+      <h2>About Me</h2>
       <p id="bio"></p>
     </section>
-    <section>
+
+    <section id="skills-section">
       <h2>Skills</h2>
       <ul id="skills" class="chips"></ul>
     </section>
-    <section>
+
+    <section id="projects-section">
       <h2>Projects</h2>
       <div id="projects" class="grid"></div>
     </section>
-  </main>
-  <footer id="footer"></footer>
-  <script src="script.js"></script>
-</body>
+</main>
 
+  <footer id="footer">
+    <p>Designed and built with HTML, CSS, and JavaScript.</p>
+  </footer>
+ <script src="script.js"></script>
+</body>
 </html>
