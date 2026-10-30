@@ -1,39 +1,194 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#360846">
-  <meta name="description" content="A personal portfolio showcasing my skills, projects, and journey as a CSE student.">
-  <title>My Portfolio | CSE Student</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#24143b">
+  <meta name="description" content="My personal portfolio and digital desktop.">
+
+  <title>My Desktop</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <header class="hero">
-    <h1 id="name"></h1>
-    <p id="tagline"></p>
-    <nav id="links" aria-label="Social links"></nav>
-  </header>
-<main>
-    <section id="about">
-      <h2>About Me</h2>
-      <p id="bio"></p>
+  <main class="desktop" id="desktop">
+
+    <!-- DESKTOP ICONS -->
+    <div class="desktop-icons">
+
+      <button class="desktop-icon" data-open="about-window">
+        <span class="desktop-icon-image icon-document"></span>
+        <span>About_Me.txt</span>
+      </button>
+
+      <button class="desktop-icon" data-open="projects-window">
+        <span class="desktop-icon-image icon-folder"></span>
+        <span>Projects</span>
+      </button>
+
+      <button class="desktop-icon" data-open="interests-window">
+        <span class="desktop-icon-image icon-folder"></span>
+        <span>My_Interests</span>
+      </button>
+
+      <button class="desktop-icon" data-open="exploring-window">
+        <span class="desktop-icon-image icon-disk"></span>
+        <span>Currently_Exploring</span>
+      </button>
+
+    </div>
+
+
+    <!-- ABOUT ME WINDOW -->
+    <section class="window" id="about-window">
+      <header class="window-titlebar">
+        <span class="window-title">
+          <span class="title-icon icon-document"></span>
+          ABOUT_ME.txt
+        </span>
+
+        <div class="window-controls">
+          <button class="minimize" aria-label="Minimize">_</button>
+          <button class="close" aria-label="Close">×</button>
+        </div>
+      </header>
+
+      <div class="window-content">
+        <h2>HELLO WORLD!</h2>
+        <p id="bio"></p>
+      </div>
     </section>
 
-    <section id="skills-section">
-      <h2>Skills</h2>
-      <ul id="skills" class="chips"></ul>
+
+    <!-- PROJECTS WINDOW -->
+    <section class="window" id="projects-window">
+      <header class="window-titlebar">
+        <span class="window-title">
+          <span class="title-icon icon-folder"></span>
+          PROJECTS
+        </span>
+
+        <div class="window-controls">
+          <button class="minimize" aria-label="Minimize">_</button>
+          <button class="close" aria-label="Close">×</button>
+        </div>
+      </header>
+
+      <div class="window-content">
+        <div id="projects"></div>
+      </div>
     </section>
 
-    <section id="projects-section">
-      <h2>Projects</h2>
-      <div id="projects" class="grid"></div>
-    </section>
-</main>
 
-  <footer id="footer">
-    <p>Designed and built with HTML, CSS, and JavaScript.</p>
-  </footer>
- <script src="script.js"></script>
+    <!-- PICKNPREP WINDOW -->
+    <section class="window" id="picknprep-window">
+      <header class="window-titlebar">
+        <span class="window-title">
+          <span class="title-icon icon-application"></span>
+          PICKNPREP
+        </span>
+
+        <div class="window-controls">
+          <button class="minimize" aria-label="Minimize">_</button>
+          <button class="close" aria-label="Close">×</button>
+        </div>
+      </header>
+
+      <div class="window-content">
+        <h2>PROJECT FILE</h2>
+        <p>A Python and MySQL food ordering and recipe project.</p>
+        <a href="https://github.com/ayisha-ziana/PicknPrep"
+           target="_blank" rel="noopener">
+          OPEN PROJECT
+        </a>
+      </div>
+    </section>
+
+
+    <!-- INTERESTS WINDOW -->
+    <section class="window" id="interests-window">
+      <header class="window-titlebar">
+        <span class="window-title">
+          <span class="title-icon icon-folder"></span>
+          MY_INTERESTS
+        </span>
+
+        <div class="window-controls">
+          <button class="minimize" aria-label="Minimize">_</button>
+          <button class="close" aria-label="Close">×</button>
+        </div>
+      </header>
+
+      <div class="window-content">
+        <h2>THINGS THAT CATCH MY EYE</h2>
+
+        <h3>Technology & Science</h3>
+        <p>Artificial Intelligence · Assistive Technology · Quantum Mechanics · Psychology</p>
+
+        <h3>Creative pursuits</h3>
+        <p>Art · Crochet · Poetry</p>
+
+        <h3>Just for fun</h3>
+        <p>Reading · Chess (still learning!)</p>
+      </div>
+    </section>
+
+
+    <!-- CURRENTLY EXPLORING WINDOW -->
+    <section class="window" id="exploring-window">
+      <header class="window-titlebar">
+        <span class="window-title">
+          <span class="title-icon icon-disk"></span>
+          CURRENTLY_EXPLORING
+        </span>
+
+        <div class="window-controls">
+          <button class="minimize" aria-label="Minimize">_</button>
+          <button class="close" aria-label="Close">×</button>
+        </div>
+      </header>
+
+      <div class="window-content">
+        <h2>WHAT'S ON MY DESK?</h2>
+
+        <h3>Learning</h3>
+        <p>Python · MySQL · Git and GitHub</p>
+
+        <h3>Exploring</h3>
+        <p>Computer Science fundamentals, beginner research and academic reading, and the intersection of technology and accessibility.</p>
+
+        <h3>Topics</h3>
+        <p>Artificial Intelligence · Robotics and hardware · Assistive technology</p>
+      </div>
+    </section>
+
+
+    <!-- TASKBAR -->
+    <footer class="taskbar">
+      <button id="start-button">START</button>
+      <div id="taskbar-windows"></div>
+      <span class="taskbar-label">MY DESKTOP</span>
+    </footer>
+
+
+    <!-- START MENU -->
+    <nav class="start-menu" id="start-menu" hidden>
+      <div class="start-heading">MY DESKTOP</div>
+
+      <button data-open="about-window">About Me</button>
+      <button data-open="projects-window">Projects</button>
+      <button data-open="interests-window">My Interests</button>
+      <button data-open="exploring-window">Currently Exploring</button>
+    </nav>
+
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
