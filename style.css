@@ -108,111 +108,51 @@ button {
   outline: none;
 }
 
+
 .desktop-icon-image {
   position: relative;
   display: block;
-  width: 34px;
-  height: 29px;
+  width: 32px;
+  height: 32px;
   image-rendering: pixelated;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
-/* PIXEL-ART DOCUMENT ICON */
+/* WINDOWS 95 PLUS PIXEL ICONS */
 
-.icon-document {
-  background: #eeeaf2;
-  border: 2px solid #45405f;
-  clip-path: polygon(
-    0 0, 70% 0, 100% 25%,
-    100% 100%, 0 100%
-  );
-  box-shadow: inset -4px -3px #aaa3bd;
+.desktop-icon-image.icon-document {
+  background-image: url("./assets/text_file.png");
 }
 
-.icon-document::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 6px;
-  width: 17px;
-  height: 2px;
-  background: #6474ad;
-  box-shadow:
-    0 5px #6474ad,
-    0 10px #6474ad;
+.desktop-icon-image.icon-folder {
+  background-image: url("./assets/folder_closed.png");
 }
 
-.icon-document::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 9px;
-  height: 8px;
-  background: #b9b2d0;
-  border-left: 2px solid #45405f;
-  border-bottom: 2px solid #45405f;
+.desktop-icon-image.icon-disk {
+  background-image: url("./assets/flop_drive.png");
 }
 
-
-/* PIXEL-ART MUTED YELLOW FOLDER */
-
-.icon-folder {
-  width: 36px;
-  height: 25px;
-  margin-top: 4px;
-  background: #d9c47e;
-  border: 2px solid #8e7542;
-  box-shadow:
-    inset 3px 3px #f0dda0,
-    inset -3px -3px #ad9256;
+.desktop-icon-image.icon-computer {
+  background-image: url("./assets/this_computer.png");
 }
 
-.icon-folder::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 7px;
-  left: 2px;
-  top: -7px;
-  background: #d9c47e;
-  border: 2px solid #8e7542;
-  border-bottom: 0;
-  box-shadow: inset 2px 2px #f0dda0;
+.desktop-icon-image.icon-music {
+  background-image: url("./assets/music.png");
 }
 
-
-/* PIXEL-ART FLOPPY DISK */
-
-.icon-disk {
-  background: #596b9d;
-  border: 2px solid #272d50;
-  box-shadow:
-    inset 3px 3px #8da0ce,
-    inset -3px -3px #39476f;
+.desktop-icon-image.icon-recycle {
+  background-image: url("./assets/recycle_bin_empty.png");
 }
 
-.icon-disk::before {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: 7px;
-  width: 15px;
-  height: 9px;
-  background: #e5dfeb;
-  border: 2px solid #343653;
-  box-shadow: inset -3px -2px #aaa5c1;
+/* Keep title-bar icons separate from desktop PNGs */
+.title-icon.icon-document,
+.title-icon.icon-folder,
+.title-icon.icon-disk {
+  background-image: none;
 }
 
-.icon-disk::after {
-  content: "";
-  position: absolute;
-  bottom: 2px;
-  left: 8px;
-  width: 12px;
-  height: 7px;
-  background: #d8c4e1;
-  border: 2px solid #343653;
-}
 /* APPLICATION ICON */
 
 .icon-application {
