@@ -201,6 +201,7 @@ button {
   border: 2px solid #614c7b;
 }
 
+
 /* WINDOWS */
 
 .window {
@@ -208,11 +209,11 @@ button {
   width: 390px;
   max-width: calc(100vw - 145px);
   min-width: 260px;
-  background: var(--soft-pink);
-  border: 2px solid var(--border-dark);
+  background: #ded9e8;
+  border: 2px solid #29263e;
   box-shadow:
-    inset 2px 2px var(--border-light),
-    inset -2px -2px #9b7ba9,
+    inset 2px 2px #ffffff,
+    inset -2px -2px #8c879d,
     4px 5px 0 #17112d80;
   z-index: 10;
 }
@@ -261,15 +262,15 @@ button {
 /* WINDOW TITLE BAR */
 
 .window-titlebar {
-  min-height: 34px;
+  min-height: 32px;
   padding: 4px 5px 4px 9px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
-  color: white;
-  background: linear-gradient(90deg, #533568, #bd78b2);
-  border-bottom: 2px solid #3a244d;
+  color: #ffffff;
+  background: linear-gradient(90deg, #253c83, #5475bd);
+  border-bottom: 2px solid #29263e;
   cursor: grab;
   user-select: none;
   touch-action: none;
@@ -309,15 +310,15 @@ button {
   height: 23px;
   padding: 0;
   line-height: 17px;
-  color: #332344;
-  background: #e8c9e4;
+  color: #29263e;
+  background: #dedbe8;
   border: 2px solid;
-  border-color: #fff1ff #684b75 #684b75 #fff1ff;
+  border-color: #ffffff #777287 #777287 #ffffff;
   font-size: 20px;
 }
 
 .window-controls button:active {
-  border-color: #684b75 #fff1ff #fff1ff #684b75;
+  border-color: #777287 #ffffff #ffffff #777287;
 }
 
 /* WINDOW CONTENT */
@@ -326,19 +327,20 @@ button {
   padding: 17px 19px 20px;
   max-height: 290px;
   overflow-y: auto;
-  background: linear-gradient(135deg, #fff0fa, #f1d5ec);
+  background: #dedbe8;
+  color: #28263a;
 }
 
 .window-content h2 {
   margin: 0 0 13px;
-  color: #56366d;
+  color: #344b86;
   font-size: 27px;
   font-weight: normal;
 }
 
 .window-content h3 {
   margin: 15px 0 4px;
-  color: #765184;
+  color: #465b91;
   font-size: 22px;
   font-weight: normal;
 }
@@ -353,15 +355,15 @@ button {
   display: inline-block;
   margin-top: 10px;
   padding: 5px 10px;
-  color: #332344;
-  background: #e3b8dd;
+  color: #29263e;
+  background: #c4c8dc;
   border: 2px solid;
-  border-color: #fff6ff #87628d #87628d #fff6ff;
+  border-color: #ffffff #777287 #777287 #ffffff;
   text-decoration: none;
 }
 
 .window-content a:hover {
-  background: #d4a4d0;
+  background: #b0bad8;
 }
 
 .window-content ul {
