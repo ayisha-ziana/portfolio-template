@@ -48,10 +48,12 @@ button {
   height: 100vh;
   min-height: 520px;
   overflow: hidden;
-  background:
-    radial-gradient(ellipse at 75% 25%, #718bb5 0%, transparent 35%),
-    radial-gradient(ellipse at 20% 80%, #6b4e86 0%, transparent 42%),
-    linear-gradient(140deg, #273c68, #51406f 55%, #25234c);
+
+  background-image: url("./portfolio-wallpaper.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #100b45;
 }
 
 /* SUBTLE WALLPAPER TEXTURE */
