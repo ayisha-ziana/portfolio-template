@@ -50,8 +50,8 @@ button {
   overflow: hidden;
 
   background-image: url("./portfolio-wallpaper.png");
-  background-size: cover;
-  background-position: center center;
+  background-size: 100% 100%;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #100b45;
 }
