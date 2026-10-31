@@ -202,6 +202,7 @@ button {
 }
 
 
+
 /* WINDOWS */
 
 .window {
@@ -209,12 +210,12 @@ button {
   width: 390px;
   max-width: calc(100vw - 145px);
   min-width: 260px;
-  background: #ded9e8;
-  border: 2px solid #29263e;
+  background: #d9d5eb;
+  border: 2px solid #171b58;
   box-shadow:
     inset 2px 2px #ffffff,
-    inset -2px -2px #8c879d,
-    4px 5px 0 #17112d80;
+    inset -2px -2px #77769e,
+    4px 5px 0 #15113d99;
   z-index: 10;
 }
 
@@ -262,18 +263,24 @@ button {
 /* WINDOW TITLE BAR */
 
 .window-titlebar {
-  min-height: 32px;
+  min-height: 34px;
   padding: 4px 5px 4px 9px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 8px;
   color: #ffffff;
-  background: linear-gradient(90deg, #253c83, #5475bd);
-  border-bottom: 2px solid #29263e;
+  background: linear-gradient(
+    100deg,
+    #3021a0 0%,
+    #5144d5 45%,
+    #168fe0 100%
+  );
+  border-bottom: 2px solid #171b58;
   cursor: grab;
   user-select: none;
   touch-action: none;
+  text-shadow: 1px 1px #21105e;
 }
 
 .window-titlebar:active {
@@ -310,15 +317,15 @@ button {
   height: 23px;
   padding: 0;
   line-height: 17px;
-  color: #29263e;
-  background: #dedbe8;
+  color: #171b58;
+  background: #deddf1;
   border: 2px solid;
-  border-color: #ffffff #777287 #777287 #ffffff;
+  border-color: #ffffff #66658d #66658d #ffffff;
   font-size: 20px;
 }
 
 .window-controls button:active {
-  border-color: #777287 #ffffff #ffffff #777287;
+  border-color: #66658d #ffffff #ffffff #66658d;
 }
 
 /* WINDOW CONTENT */
@@ -327,20 +334,26 @@ button {
   padding: 17px 19px 20px;
   max-height: 290px;
   overflow-y: auto;
-  background: #dedbe8;
-  color: #28263a;
+  background: linear-gradient(
+    145deg,
+    #e9e5f4 0%,
+    #d9d8ed 65%,
+    #d1d9f0 100%
+  );
+  color: #171b50;
 }
 
 .window-content h2 {
   margin: 0 0 13px;
-  color: #344b86;
+  color: #283c9a;
   font-size: 27px;
   font-weight: normal;
+  text-shadow: 1px 1px #ffffff;
 }
 
 .window-content h3 {
   margin: 15px 0 4px;
-  color: #465b91;
+  color: #5151a9;
   font-size: 22px;
   font-weight: normal;
 }
@@ -355,21 +368,23 @@ button {
   display: inline-block;
   margin-top: 10px;
   padding: 5px 10px;
-  color: #29263e;
-  background: #c4c8dc;
+  color: #171b58;
+  background: linear-gradient(135deg, #f0eaff, #b9c9f0);
   border: 2px solid;
-  border-color: #ffffff #777287 #777287 #ffffff;
+  border-color: #ffffff #66658d #66658d #ffffff;
   text-decoration: none;
+  box-shadow: 1px 1px 0 #77769e;
 }
 
 .window-content a:hover {
-  background: #b0bad8;
+  background: linear-gradient(135deg, #ffffff, #b6d9ff);
 }
 
 .window-content ul {
   padding-left: 23px;
   line-height: 1.35;
 }
+
 
 /* PROJECT CARD */
 
