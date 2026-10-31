@@ -177,17 +177,17 @@ button {
 /* WINDOWS */
 
 
-.window {
+..window {
   position: absolute;
   width: 390px;
   max-width: calc(100vw - 145px);
   min-width: 260px;
   background: #d9d5eb;
-  border: 2px solid #aaa4d8;
+  border: 1px solid #b9addd;
   box-shadow:
-    inset 2px 2px #ffffff,
-    inset -2px -2px #aaa5d0,
-    3px 4px 8px #21105e35;
+    inset 1px 1px #ffffff,
+    inset -1px -1px #aaa1ce,
+    2px 3px 5px #21105e30;
   z-index: 10;
 }
 
@@ -197,41 +197,40 @@ button {
 }
 
 #about-window {
-  top: 9%;
-  left: 17%;
+  top: 8%;
+  left: 20%;
   width: 380px;
 }
 
 #projects-window {
-  top: 13%;
-  left: 52%;
+  top: 8%;
+  left: 55%;
   width: 390px;
 }
 
 #picknprep-window {
-  top: 47%;
-  left: 39%;
+  top: 45%;
+  left: 35%;
   width: 360px;
 }
 
 #interests-window {
-  top: 49%;
-  left: 13%;
+  top: 48%;
+  left: 20%;
   width: 340px;
 }
 
 #exploring-window {
-  top: 57%;
-  left: 64%;
+  top: 48%;
+  left: 67%;
   width: 330px;
 }
 
 #skills-window {
   top: 18%;
-  left: 37%;
+  left: 39%;
   width: 310px;
 }
-
 /* WINDOW TITLE BAR */
 
 .window-titlebar {
@@ -243,11 +242,11 @@ button {
   gap: 8px;
   color: #ffffff;
   background: linear-gradient(
-  100deg,
-  #c000d8 0%,
-  #7136e8 48%,
-  #168fe8 100%
-);
+    100deg,
+    #c000d8 0%,
+    #7136e8 48%,
+    #168fe8 100%
+  );
   border-bottom: 1px solid #a99bdc;
   cursor: grab;
   user-select: none;
@@ -289,15 +288,15 @@ button {
   height: 23px;
   padding: 0;
   line-height: 17px;
-  color: #171b58;
+  color: #29205d;
   background: #deddf1;
   border: 2px solid;
-  border-color: #ffffff #66658d #66658d #ffffff;
+  border-color: #ffffff #9990bd #9990bd #ffffff;
   font-size: 20px;
 }
 
 .window-controls button:active {
-  border-color: #66658d #ffffff #ffffff #66658d;
+  border-color: #9990bd #ffffff #ffffff #9990bd;
 }
 
 /* WINDOW CONTENT */
@@ -372,9 +371,9 @@ button {
 
 .window.active {
   box-shadow:
-    inset 2px 2px #ffffff,
-    inset -2px -2px #aaa5d0,
-    4px 5px 10px #21105e45;
+    inset 1px 1px #ffffff,
+    inset -1px -1px #aaa1ce,
+    3px 4px 7px #21105e40;
 }
 
 /* TASKBAR */
@@ -392,32 +391,29 @@ button {
   padding: 5px 7px;
   background: linear-gradient(
     90deg,
-    #aaa4d9,
-    #c7b5df 45%,
-    #a8bce8
+    #b9addd,
+    #d1c4e9 45%,
+    #aebfe9
   );
-  border-top: 2px solid #f4efff;
-  box-shadow:
-    inset 0 2px #ffffff,
-    0 -2px 7px #17112d70;
+  border-top: 2px solid #ffffff;
+  box-shadow: inset 0 1px #ffffff;
 }
 
 #start-button {
   height: 33px;
   min-width: 82px;
   padding: 2px 9px;
-  color: #20165b;
-  background: linear-gradient(135deg, #e7dafa, #b6c5ee);
+  color: #29205d;
+  background: linear-gradient(135deg, #eee8fa, #bac9ed);
   border: 2px solid;
-  border-color: #ffffff #635c91 #635c91 #ffffff;
+  border-color: #ffffff #8279ac #8279ac #ffffff;
   font-weight: bold;
   text-shadow: 1px 1px #ffffff;
 }
 
 #start-button:active {
-  border-color: #635c91 #ffffff #ffffff #635c91;
+  border-color: #8279ac #ffffff #ffffff #8279ac;
 }
-
 #taskbar-windows {
   display: flex;
   flex: 1;
@@ -433,15 +429,15 @@ button {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
-  color: #20165b;
-  background: linear-gradient(135deg, #e3dafa, #b8c6ec);
+  color: #29205d;
+  background: linear-gradient(135deg, #eee8fa, #bac9ed);
   border: 2px solid;
-  border-color: #ffffff #69618e #69618e #ffffff;
+  border-color: #ffffff #8279ac #8279ac #ffffff;
 }
 
 .taskbar-window.taskbar-active {
-  background: linear-gradient(135deg, #aaa0d9, #94a9e3);
-  border-color: #69618e #ffffff #ffffff #69618e;
+  background: linear-gradient(135deg, #b4a6dc, #a2b5e7);
+  border-color: #8279ac #ffffff #ffffff #8279ac;
 }
 
 .taskbar-window.taskbar-hidden {
@@ -467,10 +463,8 @@ button {
   padding: 7px;
   background: linear-gradient(145deg, #e5ddf3, #c1c9eb);
   border: 2px solid;
-  border-color: #ffffff #4c467d #4c467d #ffffff;
-  box-shadow:
-    inset 1px 1px #ffffff,
-    4px 4px 0 #17112d80;
+  border-color: #ffffff #8279ac #8279ac #ffffff;
+  box-shadow: 2px 2px 5px #21105e30;
 }
 
 .start-menu[hidden] {
