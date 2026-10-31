@@ -177,7 +177,7 @@ button {
 /* WINDOWS */
 
 
-..window {
+.window {
   position: absolute;
   width: 390px;
   max-width: calc(100vw - 145px);
