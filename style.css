@@ -114,78 +114,103 @@ button {
   image-rendering: pixelated;
 }
 
-/* PIXEL-STYLE DOCUMENT ICON */
+/* PIXEL-ART DOCUMENT ICON */
 
 .icon-document {
-  background: #eee7e8;
-  border: 2px solid #55466b;
-  box-shadow: inset -4px -3px #b9aebe;
+  background: #eeeaf2;
+  border: 2px solid #45405f;
+  clip-path: polygon(
+    0 0, 70% 0, 100% 25%,
+    100% 100%, 0 100%
+  );
+  box-shadow: inset -4px -3px #aaa3bd;
 }
 
 .icon-document::before {
   content: "";
   position: absolute;
-  top: 6px;
+  top: 8px;
   left: 6px;
-  width: 18px;
+  width: 17px;
   height: 2px;
-  background: #75658b;
-  box-shadow: 0 5px #75658b, 0 10px #75658b;
+  background: #6474ad;
+  box-shadow:
+    0 5px #6474ad,
+    0 10px #6474ad;
 }
 
-/* MUTED YELLOW FOLDER ICON */
+.icon-document::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 9px;
+  height: 8px;
+  background: #b9b2d0;
+  border-left: 2px solid #45405f;
+  border-bottom: 2px solid #45405f;
+}
+
+
+/* PIXEL-ART MUTED YELLOW FOLDER */
 
 .icon-folder {
   width: 36px;
   height: 25px;
   margin-top: 4px;
-  background: var(--folder);
-  border: 2px solid var(--folder-dark);
-  box-shadow: inset -3px -3px #b5a064;
+  background: #d9c47e;
+  border: 2px solid #8e7542;
+  box-shadow:
+    inset 3px 3px #f0dda0,
+    inset -3px -3px #ad9256;
 }
 
 .icon-folder::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 6px;
+  width: 16px;
+  height: 7px;
   left: 2px;
   top: -7px;
-  background: var(--folder);
-  border: 2px solid var(--folder-dark);
+  background: #d9c47e;
+  border: 2px solid #8e7542;
   border-bottom: 0;
+  box-shadow: inset 2px 2px #f0dda0;
 }
 
-/* FLOPPY DISK ICON */
+
+/* PIXEL-ART FLOPPY DISK */
 
 .icon-disk {
-  background: #8a9cc4;
-  border: 2px solid #30304d;
-  box-shadow: inset -3px -3px #53648e;
+  background: #596b9d;
+  border: 2px solid #272d50;
+  box-shadow:
+    inset 3px 3px #8da0ce,
+    inset -3px -3px #39476f;
 }
 
 .icon-disk::before {
   content: "";
   position: absolute;
-  width: 17px;
-  height: 9px;
   top: 2px;
-  left: 6px;
-  background: #e6dce9;
-  border: 1px solid #41405c;
+  left: 7px;
+  width: 15px;
+  height: 9px;
+  background: #e5dfeb;
+  border: 2px solid #343653;
+  box-shadow: inset -3px -2px #aaa5c1;
 }
 
 .icon-disk::after {
   content: "";
   position: absolute;
-  width: 13px;
-  height: 7px;
   bottom: 2px;
   left: 8px;
-  background: #d6b9d8;
-  border: 1px solid #41405c;
+  width: 12px;
+  height: 7px;
+  background: #d8c4e1;
+  border: 2px solid #343653;
 }
-
 /* APPLICATION ICON */
 
 .icon-application {
