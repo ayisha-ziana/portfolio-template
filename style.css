@@ -78,17 +78,20 @@ button {
 
 .desktop-icons {
   position: absolute;
-  top: 22px;
-  left: 20px;
+  top: 16px;
+  left: 18px;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, 100px);
+  grid-auto-rows: 88px;
+  column-gap: 12px;
+  row-gap: 8px;
+  align-content: start;
 }
 
 .desktop-icon {
   width: 100px;
-  min-height: 76px;
+  height: 88px;
   padding: 5px;
   display: flex;
   flex-direction: column;
@@ -99,6 +102,7 @@ button {
   background: transparent;
   border: 1px solid transparent;
   text-shadow: 1px 2px 2px #17102d;
+  text-align: center;
 }
 
 .desktop-icon:hover,
