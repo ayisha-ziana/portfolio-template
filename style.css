@@ -176,17 +176,18 @@ button {
 
 /* WINDOWS */
 
+
 .window {
   position: absolute;
   width: 390px;
   max-width: calc(100vw - 145px);
   min-width: 260px;
   background: #d9d5eb;
-  border: 2px solid #171b58;
+  border: 2px solid #aaa4d8;
   box-shadow:
     inset 2px 2px #ffffff,
-    inset -2px -2px #77769e,
-    4px 5px 0 #15113d99;
+    inset -2px -2px #aaa5d0,
+    3px 4px 8px #21105e35;
   z-index: 10;
 }
 
@@ -247,7 +248,7 @@ button {
   #7136e8 48%,
   #168fe8 100%
 );
-  border-bottom: 2px solid #171b58;
+  border-bottom: 1px solid #a99bdc;
   cursor: grab;
   user-select: none;
   touch-action: none;
@@ -371,11 +372,10 @@ button {
 
 .window.active {
   box-shadow:
-    inset 2px 2px var(--border-light),
-    inset -2px -2px #9b7ba9,
-    5px 7px 0 #17112d90;
+    inset 2px 2px #ffffff,
+    inset -2px -2px #aaa5d0,
+    4px 5px 10px #21105e45;
 }
-
 
 /* TASKBAR */
 
